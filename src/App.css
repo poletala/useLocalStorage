@@ -4,6 +4,7 @@ body {
   height: 100vh;
   width: 100%;
   justify-content: center;
+  position: relative;
 }
 #root {
   margin: 2rem auto;
@@ -26,7 +27,7 @@ input {
   border: none;
   border-radius: 15px;
 }
-button {
+.button {
   background-repeat: no-repeat;
   background-size: cover;
   background-color: transparent;
@@ -50,4 +51,27 @@ button:hover {
 p {
   margin: 0;
   padding: 1rem;
+}
+.toggle-theme-btn {
+  background-image: url(./assets/toggle-theme.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 24px;
+  height: 24px;
+  background-color: transparent;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  position: absolute;
+  top: 10px;
+  right: 20px;
+}
+.toggle-theme-btn:hover {
+  border: 1px solid white;
+}
+.dark {
+  background-color: dimgray;
+}
+.light {
+  background-color: rgb(175, 171, 171);
 }
