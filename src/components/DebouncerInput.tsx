@@ -1,9 +1,11 @@
 import { useState } from "react";
-import { useDebounce } from "./useDebounce";
+import { useDebounce } from "../hooks/useDebounce";
 
 export function DebouncerInput() {
 
     const [inputValue, setInputValue] = useState('')
+    
+
     const debouncedInput = useDebounce(inputValue, 1000)
 
     function inputChange(event: React.ChangeEvent<HTMLInputElement>) {
@@ -14,7 +16,7 @@ export function DebouncerInput() {
     return (
         <>
         <div className='input-box'>
-            <input placeholder='Enter something to debounce' value={inputValue} onChange={inputChange}/>     
+            <input placeholder='Enter to use useDebounce' value={inputValue} onChange={inputChange}/>     
         </div>
         <div className='info-box'>
             <p>{debouncedInput}</p>

@@ -1,5 +1,5 @@
-import './App.css'
-import { useTheme } from './useTheme'
+import '../App.css'
+import { useTheme } from '../hooks/useTheme'
 
 
 

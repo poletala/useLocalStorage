@@ -21,6 +21,10 @@ body {
   align-items: center;
   height: 30px;
 }
+.info-box-with-error {
+  display: flex;
+  flex-direction: column;
+}
 input {
   padding: 1rem;
   width: 200px;
@@ -74,4 +78,9 @@ p {
 }
 .light {
   background-color: rgb(175, 171, 171);
+}
+.error {
+  color: black;
+  font-size: 12px;
+  margin: 7px
 }

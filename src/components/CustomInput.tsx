@@ -1,6 +1,6 @@
 import { useState } from 'react'
-import { useLocalStorage } from './useLocalStorage';
-import './App.css'
+import { useLocalStorage } from '../hooks/useLocalStorage';
+import '../App.css'
 
 
 type Props = {
