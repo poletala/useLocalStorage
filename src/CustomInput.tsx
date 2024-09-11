@@ -1,6 +1,7 @@
 import { useState } from 'react'
-import { useLocalStorage } from './UseLocalStorage';
+import { useLocalStorage } from './useLocalStorage';
 import './App.css'
+
 
 type Props = {
     placeholder: string,

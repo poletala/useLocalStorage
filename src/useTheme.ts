@@ -1,4 +1,4 @@
-import { useLocalStorage } from './UseLocalStorage'
+import { useLocalStorage } from './useLocalStorage'
 
 export const useTheme = () => {
     const {value: theme, setKeyValue: setTheme} = useLocalStorage('theme', 'dark');
