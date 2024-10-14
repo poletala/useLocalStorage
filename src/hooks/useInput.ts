@@ -14,11 +14,11 @@ export function useInput(inputValue: string, inputValueLength: number, inputValu
             setError("Input value is required")    
            return
         } 
-        if (changedValue && changedValue.length <=  inputValueLengthMin) {
+        if (changedValue && changedValue.length <= inputValueLengthMin) {
             setError(`Input value length must be greater than  ${inputValueLengthMin}`)
             return
         }
-        if (changedValue.length >=  inputValueLength) {
+        if (changedValue.length >= inputValueLength) {
             setError(`Input value length must be less than or equal to ${inputValueLength}`)
             return
         } else {

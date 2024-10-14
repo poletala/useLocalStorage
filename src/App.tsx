@@ -3,6 +3,7 @@ import { CustomInput } from './components/CustomInput';
 import { DebouncerInput } from './components/DebouncerInput';
 import { ToggleTheme } from './components/ToggleTheme';
 import { StateInput } from './components/StateInput';
+import { ProductPosts } from './components/ProductsPosts';
 
 
 
@@ -14,6 +15,7 @@ function App() {
       <CustomInput placeholder='Enter your surname' keyName='surname' keyValue='unknown' text='Surname'/>
       <DebouncerInput />
       <StateInput />
+      <ProductPosts />
 
     </>  
   )
